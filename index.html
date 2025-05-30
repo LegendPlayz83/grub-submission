@@ -5,64 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Supercars</title>
    <link rel="icon" type="image/x-icon" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/259c1fc15d90fb5d9ce9c5a0471daae63ae14fef_image.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OerWCwrNodT2SFoUzWA8N7nPFYdY0pX7hfuFVw+rXyW5sY" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-  .footer-dark {
-    background-color: #0b0f19; /* Footer background color */
-    color: #d1d6de; /* Light text color for the footer */
-    padding-top: 4rem; /* Top padding */
-    padding-bottom: 2rem; /* Bottom padding */
-}
-.footer-dark a {
-    color: #d1d6de; /* Link color */
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.footer-dark a:hover {
-    color: #8c909e; /* Hover color for links */
-}
-.footer-dark .footer-heading {
-    font-weight: 600; /* Bold headings */
-    color: #ffffff; /* Slightly lighter heading color */
-    margin-bottom: 1.5rem;
-}
-.footer-dark .list-unstyled li {
-    margin-bottom: 0.75rem; /* Spacing between list items */
-}
-.footer-dark .social-icons a {
-    font-size: 1.5rem; /* Icon size */
-    margin-right: 1.25rem; /* Spacing between icons */
-    color: #d1d6de;
-}
-.footer-dark .social-icons a:hover {
-    color: #ffffff;
-}
-.footer-dark .company-info {
-    margin-bottom: 2rem;
-}
-.footer-dark .logo {
-    margin-bottom: 1.5rem;
-    width: 40px; /* Adjust logo size as needed */
-    height: auto;
-    /* In your screenshot, the logo looks like an SVG or a custom icon.
-       For this example, I'll use a placeholder/dummy icon.
-       If you have an SVG, you'd embed it or use <img>. */
-    display: inline-block;
-    vertical-align: middle;
-    color: #7d5aed; /* Example color for the placeholder logo */
-    font-size: 2.5rem; /* Adjust size of placeholder icon */
-}
-.footer-dark hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Divider line */
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
-}
-.footer-dark .copyright {
-    font-size: 0.9rem;
-    color: #8c909e;
-}
-</style>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OerWCwrNodT2SFoUzWA8N7nPFYdY0pX7hfuFVw+rXyW5sY" crossorigin="anonymous">
+    /* Ensure body takes full height to push footer down if content is short */
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* This ensures the body is at least the height of the viewport */
+    }
+    main {
+        flex-grow: 1; /* This makes the main content area take up available space */
+    }
+
+    /* Your existing footer custom styles */
+    .footer-dark {
+      background-color: #0b0f19; /* Footer background color */
+      color: #d1d6de; /* Light text color for the footer */
+      padding-top: 4rem; /* Top padding */
+      padding-bottom: 2rem; /* Bottom padding */
+    }
+    .footer-dark a {
+      color: #d1d6de; /* Link color */
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .footer-dark a:hover {
+      color: #8c909e; /* Hover color for links */
+    }
+    .footer-dark .footer-heading {
+      font-weight: 600; /* Bold headings */
+      color: #ffffff; /* Slightly lighter heading color */
+      margin-bottom: 1.5rem;
+    }
+    .footer-dark .list-unstyled li {
+      margin-bottom: 0.75rem; /* Spacing between list items */
+    }
+    .footer-dark .social-icons a {
+      font-size: 1.5rem; /* Icon size */
+      margin-right: 1.25rem; /* Spacing between icons */
+      color: #d1d6de;
+    }
+    .footer-dark .social-icons a:hover {
+      color: #ffffff;
+    }
+    .footer-dark .company-info {
+      margin-bottom: 2rem;
+    }
+    .footer-dark .logo {
+      margin-bottom: 1.5rem;
+      width: 40px; /* Adjust logo size as needed */
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+      color: #7d5aed; /* Example color for the placeholder logo */
+      font-size: 2.5rem; /* Adjust size of placeholder icon */
+    }
+    .footer-dark hr {
+      border-top: 1px solid rgba(255, 255, 255, 0.1); /* Divider line */
+      margin-top: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    .footer-dark .copyright {
+      font-size: 0.9rem;
+      color: #8c909e;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
 
@@ -71,8 +84,7 @@
       <a href="index.html" class="text-xl font-bold text-blue-600">Supercars</a>
       <ul class="hidden md:flex space-x-6">
         <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-        <li><a href="" class="hover:text-blue-600">Services</a></li>
-        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li> <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
@@ -89,22 +101,18 @@
     </div>
   </nav>
 
-  <!-- Main Container -->
   <main class="container mx-auto px-4 py-10 space-y-10">
 
-    <!-- Home Section -->
     <section id="home" class="text-center max-w-3xl mx-auto">
-      <h1 class="text-3xl font-WDXL Lubrifont TC text-blue-700">Supercars</h1>
-      <p class="text-gray-700">Behold the <b>supercar</b>: a street-legal marvel engineered for raw power, 
-        blistering speed, and precision handling that would feel at home on a race track. These aren't just cars; 
-        they're the ultimate expression of automotive artistry, defined by their low-slung, often mid-engine profiles 
+      <h1 class="text-3xl font-bold text-blue-700">Supercars</h1> <p class="text-gray-700">Behold the <b>supercar</b>: a street-legal marvel engineered for raw power,
+        blistering speed, and precision handling that would feel at home on a race track. These aren't just cars;
+        they're the ultimate expression of automotive artistry, defined by their low-slung, often mid-engine profiles
         that slice through the air with minimal drag, allowing for breathtaking top speeds. Beyond their undeniable performance,
-         supercars possess an intrinsic <b>cachet</b>—a blend of heritage and extreme exclusivity that sets them apart. And for those pushing 
-         the very limits of this elite class, there's the hypercar, a term reserved for the absolute pinnacle of 
+         supercars possess an intrinsic <b>cachet</b>—a blend of heritage and extreme exclusivity that sets them apart. And for those pushing
+         the very limits of this elite class, there's the hypercar, a term reserved for the absolute pinnacle of
          high-performance machines.</p>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="max-w-4xl mx-auto">
       <h2 class="text-2xl font-semibold mb-6 text-blue-700">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -139,12 +147,14 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
                 <div class="company-info">
                     <div class="logo">
-                        <i class="fa-solid fa-wave-square"></i> </div>
+                        <i class="fa-solid fa-wave-square"></i>
+                    </div>
                     <p class="mt-3">Making the world a better place through constructing elegant hierarchies.</p>
                     <div class="social-icons mt-4">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter-square"></i></a> <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
@@ -208,6 +218,7 @@
     });
   </script>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
-
