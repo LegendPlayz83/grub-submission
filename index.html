@@ -13,42 +13,40 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    /* Ensure body takes full height to push footer down if content is short */
     body {
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* This ensures the body is at least the height of the viewport */
+        min-height: 100vh; 
     }
     main {
-        flex-grow: 1; /* This makes the main content area take up available space */
-    }
+        flex-grow: 1; 
 
-    /* Your existing footer custom styles */
+    
     .footer-dark {
-      background-color: #0b0f19; /* Footer background color */
-      color: #d1d6de; /* Light text color for the footer */
-      padding-top: 4rem; /* Top padding */
-      padding-bottom: 2rem; /* Bottom padding */
+      background-color: #0b0f19;
+      color: #d1d6de; 
+      padding-top: 4rem; 
+      padding-bottom: 2rem; 
     }
     .footer-dark a {
-      color: #d1d6de; /* Link color */
+      color: #d1d6de; 
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .footer-dark a:hover {
-      color: #8c909e; /* Hover color for links */
+      color: #8c909e; 
     }
     .footer-dark .footer-heading {
-      font-weight: 600; /* Bold headings */
-      color: #ffffff; /* Slightly lighter heading color */
+      font-weight: 600; 
+      color: #ffffff; 
       margin-bottom: 1.5rem;
     }
     .footer-dark .list-unstyled li {
-      margin-bottom: 0.75rem; /* Spacing between list items */
+      margin-bottom: 0.75rem; 
     }
     .footer-dark .social-icons a {
-      font-size: 1.5rem; /* Icon size */
-      margin-right: 1.25rem; /* Spacing between icons */
+      font-size: 1.5rem;
+      margin-right: 1.25rem; 
       color: #d1d6de;
     }
     .footer-dark .social-icons a:hover {
@@ -59,15 +57,15 @@
     }
     .footer-dark .logo {
       margin-bottom: 1.5rem;
-      width: 40px; /* Adjust logo size as needed */
+      width: 40px; 
       height: auto;
       display: inline-block;
       vertical-align: middle;
-      color: #7d5aed; /* Example color for the placeholder logo */
-      font-size: 2.5rem; /* Adjust size of placeholder icon */
+      color: #7d5aed; 
+      font-size: 2.5rem; 
     }
     .footer-dark hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.1); /* Divider line */
+      border-top: 1px solid rgba(255, 255, 255, 0.1); 
       margin-top: 3rem;
       margin-bottom: 1.5rem;
     }
