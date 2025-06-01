@@ -4,75 +4,70 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Supercars</title>
-   <link rel="icon" type="image/x-icon" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/259c1fc15d90fb5d9ce9c5a0471daae63ae14fef_image.png">
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OerWCwrNodT2SFoUzWA8N7nPFYdY0pX7hfuFVw+rXyW5sY" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <link rel="icon" type="image/x-icon" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/259c1fc15d90fb5d9ce9c5a0471daae63ae14fef_image.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     body {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh; 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     main {
-        flex-grow: 1; 
-
-    
+      flex-grow: 1;
+    }
     .footer-dark {
-      background-color: #0b0f19;
-      color: #d1d6de; 
-      padding-top: 4rem; 
-      padding-bottom: 2rem; 
+      background-color: black;
+      color: lightgray;
+      padding-top: 4rem;
+      padding-bottom: 2rem;
     }
     .footer-dark a {
-      color: #d1d6de; 
+      color: lightgray;
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .footer-dark a:hover {
-      color: #8c909e; 
+      color: gray;
     }
     .footer-dark .footer-heading {
-      font-weight: 600; 
-      color: #ffffff; 
+      font-weight: 600;
+      color: white;
       margin-bottom: 1.5rem;
     }
     .footer-dark .list-unstyled li {
-      margin-bottom: 0.75rem; 
+      margin-bottom: 0.75rem;
     }
     .footer-dark .social-icons a {
       font-size: 1.5rem;
-      margin-right: 1.25rem; 
-      color: #d1d6de;
+      margin-right: 1.25rem;
+      color: lightgray;
     }
     .footer-dark .social-icons a:hover {
-      color: #ffffff;
+      color: white;
     }
     .footer-dark .company-info {
       margin-bottom: 2rem;
     }
     .footer-dark .logo {
       margin-bottom: 1.5rem;
-      width: 40px; 
+      width: 40px;
       height: auto;
       display: inline-block;
       vertical-align: middle;
-      color: #7d5aed; 
-      font-size: 2.5rem; 
+      color: mediumpurple;
+      font-size: 2.5rem;
     }
     .footer-dark hr {
-      border-top: 1px solid rgba(255, 255, 255, 0.1); 
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-top: 3rem;
       margin-bottom: 1.5rem;
-      align-center: 1.5rem
     }
     .footer-dark .copyright {
       font-size: 0.9rem;
-      color: #8c909e;
+      color: gray;
     }
   </style>
 </head>
@@ -83,11 +78,11 @@
       <a href="index.html" class="text-xl font-bold text-blue-600">Supercars</a>
       <ul class="hidden md:flex space-x-6">
         <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
-        <li><a href="coolpics.html" class="hover:text-blue-600">Cool Pictures</a></li> 
+        <li><a href="coolpics.html" class="hover:text-blue-600">Cool Pictures</a></li>
         <li><a href="aboutsite.html" class="hover:text-blue-600">Absolute Cinema</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
-        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
+        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
@@ -96,14 +91,12 @@
       <ul class="space-y-3">
         <li><a href="#home" class="block py-2 hover:text-blue-600">Home</a></li>
         <li><a href="coolpics.html" class="block py-2 hover:text-blue-600">Cool Pics</a></li>
-        <li><a href="#contact" class="block py-2 hover:text-blue-600">Contact</a></li>
+        <li><a href="#contact" class="block py-2 hover:text-blue-600">Absolute Cinema</a></li>
       </ul>
     </div>
   </nav>
 
   <main class="container mx-auto px-4 py-10 space-y-10">
-
-    
     <section id="services" class="max-w-4xl mx-auto">
       <h2 class="text-2xl font-semibold mb-6 text-blue-700">W Cars</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -119,26 +112,47 @@
           <h3 class="font-semibold mb-2">Supra Mk4</h3>
           <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/cd0b12927a0c769e00e0fa170fb4ac43aadd50e1_image.png">
         </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">SSC Tuatara</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/27cfbde7490edcfc3946e6fc732df3cbe1664db8_image.png">
+        </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">Lamborghini</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/9880d0061f6e7c5fefd19eba7bcefdd72473c41f_image.png">
+        </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">Ford Mustang</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/e314c869640048668bdcd092ff83bb9c337fc2e5_image.png">
+        </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">Dodge Challenger</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/33c20f9af54331323656319b524fe6fa6446f5b6_image.png">
+        </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">Shelby GT500CR</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/b10e7b15d0ac390def68df9c97ac988215d43716_image.png">
+        </div>
+        <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
+          <h3 class="font-semibold mb-2">McLaren Senna</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/1d567318f4b73bedccb9e56377a442f7f6ff5c4a_image.png">
+        </div>
       </div>
     </section>
-
   </main>
 
-<footer class="footer-dark">
+  <footer class="footer-dark">
     <div class="container">
-                        <i class="fa-solid fa-wave-square"></i>
-                    </div>
-                    <p class="text-center">Hack Club 2025</p>
-                    <div class="social-icons mt-4"><p class="text-center">
-                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter-square"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-</script>
+      <p class="text-center">No rights reserved. Hack Club 2025</p>
+      <div class="social-icons mt-4">
+        <p class="text-center">
+          <a href="https://hackclub.com/slack" aria-label="Slack"><i class="fab fa-slack"></i></a>
+          <a href="https://www.instagram.com/starthackclub" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://x.com/hackclub" aria-label="Twitter"><i class="fab fa-x"></i></a>
+          <a href="https://github.com/hackclub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.youtube.com/c/HackClubHQ" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
