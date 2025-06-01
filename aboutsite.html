@@ -6,11 +6,7 @@
   <title>Shining Bright</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -24,7 +20,6 @@
       padding: 2rem;
       justify-content: flex-start;
     }
-
     .container {
       background: rgba(255, 255, 255, 0.15);
       border: 2px solid #fff5b1;
@@ -36,11 +31,9 @@
       transition: box-shadow 0.3s ease;
       margin-bottom: 2rem;
     }
-
     .container:hover {
       box-shadow: 0 0 30px 5px #ffec8b;
     }
-
     h1 {
       font-weight: 700;
       font-size: 2.7rem;
@@ -48,14 +41,12 @@
       letter-spacing: 0.06em;
       text-shadow: 1px 1px 3px #b07800;
     }
-
     p.subheader {
       font-size: 1.15rem;
       margin: 1rem 0 2rem 0;
       font-weight: 500;
       text-shadow: 1px 1px 2px #cfa837;
     }
-
     button.gold-button {
       background: linear-gradient(145deg, #ffd700, #b8860b);
       border: none;
@@ -68,34 +59,23 @@
       box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
       transition: background 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
       user-select: none;
-      user-drag: none;
-      -webkit-user-select: none;
-      -webkit-user-drag: none;
     }
-
     button.gold-button:hover {
       background: linear-gradient(145deg, #fff17a, #d4af37);
-      box-shadow:
-        0 0 8px 3px #fff68f,
-        0 0 15px 7px #ffd700,
-        0 0 30px 10px #ffec44;
+      box-shadow: 0 0 8px 3px #fff68f, 0 0 15px 7px #ffd700, 0 0 30px 10px #ffec44;
       filter: brightness(1.3);
       color: #3f2e00;
     }
-
     button.gold-button:active {
       transform: scale(0.96);
       box-shadow: 0 3px 8px rgba(255, 215, 0, 0.8);
     }
-
     footer {
       margin-top: 2.5rem;
       font-size: 0.9rem;
       opacity: 0.75;
       text-shadow: 1px 1px 1px #9e7a00;
     }
-
-    /* Paragraph space at bottom of page */
     .bottom-paragraph-space {
       max-width: 480px;
       border-left: 4px solid #d4af37;
@@ -115,17 +95,16 @@
   </style>
 </head>
 <body>
-
   <div class="container" role="main">
-    <h1>absolute cinema</h1>
-    <p class="subheader">Turn the ordinary into absolute cinema.</p>
-    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4f6bfd3a9132526f474079eff25bd2d46efcc096_image.png" height="300px"; width="300px"><br>
-
-    <button class="gold-button" id="shineBtn" aria-label="Make it shine button">Try Clicking this text</button>
+    <h1>Absolute Cinema</h1>
+    <p class="subheader">Because even everyday moments deserve a little movie magic.</p>
+    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4f6bfd3a9132526f474079eff25bd2d46efcc096_image.png" height="300px" width="300px" alt="Golden sparkle art"><br>
+    <button class="gold-button" id="shineBtn" aria-label="Click to shine">Click to Shine</button>
   </div>
 
-  <p class="bottom-paragraph-space" contenteditable="true" aria-label="Paragraph">
-   This site took me 8 days to make. I had to learn new features which i didnt even know existed</p>
+  <p class="bottom-paragraph-space" contenteditable="true" aria-label="Editable paragraph">
+    It took me 8 days to bring this page to life. I had to dive deep and learn features I didn’t even know existed — but here we are!
+  </p>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -135,11 +114,11 @@
         const sparksCount = 15;
 
         for (let i = 0; i < sparksCount; i++) {
-          const sparkle = document.createElement('span');
-          sparkle.textContent = '✨';
+          const sparkle = document.createElement('img');
+          sparkle.src = 'https://hc-cdn.hel1.your-objectstorage.com/s/v3/f04b861405d4dde4fadfae84d40551df84efbb66_image.png';
           sparkle.style.position = 'fixed';
-          sparkle.style.color = '#FFDF00';
-          sparkle.style.fontSize = `${Math.random() * 16 + 12}px`;
+          sparkle.style.width = '22px';
+          sparkle.style.height = '22px';
           sparkle.style.left = (rect.left + rect.width / 2 + (Math.random() - 0.5) * 120) + 'px';
           sparkle.style.top = (rect.top + rect.height / 2 + (Math.random() - 0.5) * 80) + 'px';
           sparkle.style.opacity = '1';
@@ -164,4 +143,3 @@
   </script>
 </body>
 </html>
-
