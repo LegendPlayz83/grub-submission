@@ -23,22 +23,22 @@
 
     
     .footer-dark {
-      background-color: black;
-      color: white; 
+      background-color: #0b0f19;
+      color: #d1d6de; 
       padding-top: 4rem; 
       padding-bottom: 2rem; 
     }
     .footer-dark a {
-      color: white; 
+      color: #d1d6de; 
       text-decoration: none;
       transition: color 0.3s ease;
     }
     .footer-dark a:hover {
-      color: gray; 
+      color: #8c909e; 
     }
     .footer-dark .footer-heading {
       font-weight: 600; 
-      color: whitesmoke; 
+      color: #ffffff; 
       margin-bottom: 1.5rem;
     }
     .footer-dark .list-unstyled li {
@@ -68,6 +68,7 @@
       border-top: 1px solid rgba(255, 255, 255, 0.1); 
       margin-top: 3rem;
       margin-bottom: 1.5rem;
+      align-center: 1.5rem
     }
     .footer-dark .copyright {
       font-size: 0.9rem;
@@ -81,9 +82,8 @@
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <a href="index.html" class="text-xl font-bold text-blue-600">Supercars</a>
       <ul class="hidden md:flex space-x-6">
-        <li><a href="index.html" class="hover:text-blue-600">Home</a></li>
-        <li><a href="coolpics.html" class="hover:text-blue-600">Cool Pictures</a></li> 
-        <li><a href="aboutsite.html" class="hover:text-blue-600">About</a></li>
+        <li><a href="coolpics.html" class="hover:text-blue-600">Cool Pics</a></li>
+        <li><a href="#services" class="hover:text-blue-600">Services</a></li> <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
       </ul>
       <button id="menu-btn" class="md:hidden focus:outline-none">
         <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" >
@@ -94,7 +94,7 @@
     <div id="mobile-menu" class="hidden bg-white px-4 pb-4 md:hidden">
       <ul class="space-y-3">
         <li><a href="#home" class="block py-2 hover:text-blue-600">Home</a></li>
-        <li><a href="#services" class="block py-2 hover:text-blue-600">Services</a></li>
+        <li><a href="coolpics.html" class="block py-2 hover:text-blue-600">Cool Pics</a></li>
         <li><a href="#contact" class="block py-2 hover:text-blue-600">Contact</a></li>
       </ul>
     </div>
@@ -102,40 +102,23 @@
 
   <main class="container mx-auto px-4 py-10 space-y-10">
 
-    <section id="home" class="text-center max-w-3xl mx-auto">
-      <h1 class="text-3xl font-bold text-blue-700">Supercars</h1> <p class="text-gray-700">Behold the <b>supercar</b>: a street-legal marvel engineered for raw power,
-        blistering speed, and precision handling that would feel at home on a race track. These aren't just cars;
-        they're the ultimate expression of automotive artistry, defined by their low-slung, often mid-engine profiles
-        that slice through the air with minimal drag, allowing for breathtaking top speeds. Beyond their undeniable performance,
-         supercars possess an intrinsic <b>cachet</b>—a blend of heritage and extreme exclusivity that sets them apart. And for those pushing
-         the very limits of this elite class, there's the hypercar, a term reserved for the absolute pinnacle of
-         high-performance machines.</p>
-    </section>
-
+    
     <section id="services" class="max-w-4xl mx-auto">
-      <h2 class="text-2xl font-semibold mb-6 text-blue-700">Our Services</h2>
+      <h2 class="text-2xl font-semibold mb-6 text-blue-700">W Cars</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">Web Design</h3>
-          <p class="text-gray-700">Beautiful and simple designs tailored to your needs.</p>
+          <h3 class="font-semibold mb-2">Audi R8</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/624b430285b92a08037c1534907cf7fc861d48e5_image.png">
         </div>
         <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">SEO</h3>
-          <p class="text-gray-700">Improve your site's visibility on search engines.</p>
+          <h3 class="font-sWDXL Lubrifont TC">Laferrari</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/259c1fc15d90fb5d9ce9c5a0471daae63ae14fef_image.png">
         </div>
         <div class="bg-white p-6 rounded-md shadow hover:shadow-lg transition">
-          <h3 class="font-semibold mb-2">Consulting</h3>
-          <p class="text-gray-700">Expert advice to help your business grow online.</p>
+          <h3 class="font-semibold mb-2">Supra Mk4</h3>
+          <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/cd0b12927a0c769e00e0fa170fb4ac43aadd50e1_image.png">
         </div>
       </div>
-    </section>
-
-    <section id="contact" class="text-center max-w-md mx-auto">
-      <h2 class="text-2xl font-semibold mb-4 text-blue-700">Get in Touch</h2>
-      <p class="mb-6 text-gray-700">Questions? Feel free to reach out!</p>
-      <a href="mailto:godplayz83@gmail.com" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded hover:bg-blue-700 transition">
-        Email Us
-      </a>
     </section>
 
   </main>
