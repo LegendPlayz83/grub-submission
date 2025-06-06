@@ -5,107 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shining Bright</title>
   <link rel="icon" type="image/png" href="https://hc-cdn.hel1.your-objectstorage.com/s/v3/f04b861405d4dde4fadfae84d40551df84efbb66_image.png"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-    * { box-sizing: border-box; }
     body {
-      margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #d9e6fa;
-      color: #3f2e00;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
-      justify-content: flex-start;
-    }
-    .container {
-      background: rgba(255, 255, 255, 0.15);
-      border: 2px solid #fff5b1;
-      border-radius: 15px;
-      padding: 3rem 4rem;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
-      max-width: 480px;
-      backdrop-filter: blur(10px);
-      transition: box-shadow 0.3s ease;
-      margin-bottom: 2rem;
-    }
-    .container:hover {
-      box-shadow: 0 0 30px 5px #ffec8b;
-    }
-    h1 {
-      font-weight: 700;
-      font-size: 2.7rem;
-      margin-bottom: 0.5rem;
-      letter-spacing: 0.06em;
-      text-shadow: 1px 1px 3px #b07800;
-    }
-    p.subheader {
-      font-size: 1.15rem;
-      margin: 1rem 0 2rem 0;
-      font-weight: 500;
-      text-shadow: 1px 1px 2px #cfa837;
-    }
-    button.gold-button {
-      background: linear-gradient(145deg, #ffd700, #b8860b);
-      border: none;
-      border-radius: 25px;
-      padding: 0.75rem 2.5rem;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #3f2e00;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(255, 215, 0, 0.6);
-      transition: background 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
-      user-select: none;
-    }
-    button.gold-button:hover {
-      background: linear-gradient(145deg, #fff17a, #d4af37);
-      box-shadow: 0 0 8px 3px #fff68f, 0 0 15px 7px #ffd700, 0 0 30px 10px #ffec44;
-      filter: brightness(1.3);
-      color: #3f2e00;
-    }
-    button.gold-button:active {
-      transform: scale(0.96);
-      box-shadow: 0 3px 8px rgba(255, 215, 0, 0.8);
-    }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.9rem;
-      opacity: 0.75;
-      text-shadow: 1px 1px 1px #9e7a00;
-    }
-    .bottom-paragraph-space {
-      max-width: 480px;
-      border-left: 4px solid #d4af37;
-      padding-left: 1rem;
-      color: #6e5a00;
-      font-size: 1rem;
-      font-style: italic;
-      min-height: 4rem;
-      margin-top: auto;
-      margin-bottom: 1rem;
-      user-select: text;
-      background: rgba(255, 255, 255, 0.25);
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-      text-align: left;
     }
   </style>
 </head>
-<body>
-  <div class="container" role="main">
-    <h1>Absolute Cinema</h1>
-    <p class="subheader">Turn the ordinary into absolute cinema with HackClub.</p>
-    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4f6bfd3a9132526f474079eff25bd2d46efcc096_image.png" height="300px" width="300px" alt="Golden sparkle art"><br>
-    <button class="gold-button" id="shineBtn" aria-label="Click to shine">Click to Shine</button>
+<body class="min-h-screen bg-blue-100 text-yellow-900 flex flex-col items-center text-center p-8">
+
+  <div class="bg-white/30 border-2 border-yellow-100 rounded-2xl p-12 shadow-xl max-w-md backdrop-blur-md hover:shadow-yellow-300 transition-all mb-8">
+    <h1 class="text-4xl font-bold mb-2 tracking-wide drop-shadow-[1px_1px_3px_rgba(176,120,0,1)]">Absolute Cinema</h1>
+    <p class="text-lg font-medium mb-8 drop-shadow-[1px_1px_2px_rgba(207,168,55,1)]">Turn the ordinary into absolute cinema with HackClub.</p>
+    <img src="https://hc-cdn.hel1.your-objectstorage.com/s/v3/4f6bfd3a9132526f474079eff25bd2d46efcc096_image.png" alt="Golden sparkle art" class="mx-auto mb-6 w-[300px] h-[300px]">
+    <button id="shineBtn" aria-label="Click to shine" class="bg-gradient-to-br from-yellow-400 to-yellow-700 text-yellow-900 font-semibold px-10 py-3 rounded-full text-lg shadow-md hover:from-yellow-200 hover:to-yellow-500 hover:shadow-[0_0_8px_3px_#fff68f,0_0_15px_7px_#ffd700,0_0_30px_10px_#ffec44] transition-all active:scale-95">Click to Shine</button>
   </div>
 
-  <p class="bottom-paragraph-space" contenteditable="true" aria-label="Editable paragraph">
+  <p class="max-w-md bg-white/40 border-l-4 border-yellow-600 rounded-md shadow-md text-left italic px-4 py-3 text-yellow-800 mb-4" contenteditable="true" aria-label="Editable paragraph">
     It took me 8 days to bring this page to life. I had to dive deep and learn features I didn’t even know existed — but here we are!
   </p>
+
+  <footer class="mt-10 text-sm opacity-75 drop-shadow-sm text-yellow-700">
+    Made with <span class="font-semibold">glow</span> by HackClub ✨
+  </footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
